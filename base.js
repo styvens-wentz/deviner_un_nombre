@@ -11,7 +11,6 @@ var felicitation = document.getElementById('felicitation');
 var jeux = document.getElementById('jeux');
 
 essaie = 10;
-console.log(nombre_aleatoire);
 
 function createG() {
     var p = document.createElement('p');
