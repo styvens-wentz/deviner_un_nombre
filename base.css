@@ -1,0 +1,112 @@
+#titre {
+    text-align: center;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.60);
+    margin-top: 20px;
+    font-size: 90px;
+    text-shadow: 6px 6px 3px rgba(125, 125, 125, 0.71);
+}
+
+#nombre_proposer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#champ_nombre {
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#nombre_proposer p {
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#nombre_proposer input:not(#champ_nombre) {
+    margin: 20px;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-family: Algerian, cursive;
+}
+
+#essaie_restant {
+    background: rgba(0, 0, 0, 0.41);
+    color: indigo;
+    font-size: 30px;
+    padding-left: 10px;
+    border: rgba(0, 0, 0, 0.51) solid 4px;
+    border-radius: 20px;
+    font-family: cursive;
+    width: 300px;
+    box-shadow: 0 0 10px black;
+}
+
+#resultat {
+    background: rgba(0, 0, 0, 0.41);
+    color: indigo;
+    font-size: 30px;
+    padding-left: 10px;
+    border: rgba(0, 0, 0, 0.51) solid 4px;
+    border-radius: 20px;
+    font-family: cursive;
+    width: 300px;
+    height: 55px;
+    box-shadow: 0 0 10px black;
+}
+
+#ensemble_affiche {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#resultat_nombre {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#essaie_nombre {
+    font-family: "Arial Black", serif;
+    color: #9f5a00;
+}
+
+#nombre_valider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 40px;
+    margin-top: -8px;
+    width: 400px;
+    height: 150px;
+    border: black solid 5px;
+}
+
+#nombre_valider p {
+    color: red;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+h2 {
+    width: 400px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-top: black solid 5px;
+    border-right: black solid 5px;
+    border-left: black solid 5px;
+    text-decoration: underline;
+    color: rgba(55, 55, 55, 0.81);
+    text-align: center;
+    margin-top: 25px;
+}
+
+#ensemble_proposer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
