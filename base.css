@@ -154,10 +154,10 @@ h2 {
 }
 
 #gagner p {
-    font-size: 60px;
-    font-family: Stencil, cursive;
-    color: darkgreen;
-}
+     font-size: 60px;
+     font-family: Stencil, cursive;
+     color: darkgreen;
+ }
 
 #rejouer {
     background: darkolivegreen;
@@ -166,4 +166,35 @@ h2 {
     color: gainsboro;
     border-radius: 20px;
     width: 200px;
+}
+
+#jeux {
+    filter: blur(15px);
+}
+
+#niveau {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+}
+
+#niveau input {
+    background: darkolivegreen;
+    font-size: 30px;
+    font-family: cursive;
+    color: gainsboro;
+    border-radius: 20px;
+    width: 200px;
+    margin: 10px;
+}
+
+#niveau h3 {
+    font-size: 60px;
+    font-family: Stencil, cursive;
+    color: darkgreen;
 }

@@ -9,8 +9,31 @@ var rejouer = document.getElementById('rejouer');
 var gagner = document.getElementById('gagner');
 var felicitation = document.getElementById('felicitation');
 var jeux = document.getElementById('jeux');
+var niveau = document.getElementById('niveau');
+var facile = document.getElementById('facile');
+var normale = document.getElementById('normale');
+var difficile = document.getElementById('difficile');
 
-essaie = 10;
+facile.addEventListener("click", function () {
+    essaie = 10;
+    document.getElementById('essaie_nombre').innerHTML = essaie;
+    niveau.style.display = 'none';
+    jeux.style.filter = 'blur(0)'
+});
+
+normale.addEventListener("click", function () {
+    essaie = 8;
+    document.getElementById('essaie_nombre').innerHTML = essaie;
+    niveau.style.display = 'none';
+    jeux.style.filter = 'blur(0)'
+});
+
+difficile.addEventListener("click", function () {
+    essaie = 6;
+    document.getElementById('essaie_nombre').innerHTML = essaie;
+    niveau.style.display = 'none';
+    jeux.style.filter = 'blur(0)'
+});
 
 function createG() {
     var p = document.createElement('p');
