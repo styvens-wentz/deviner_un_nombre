@@ -74,7 +74,7 @@
     color: #9f5a00;
 }
 
-#nombre_valider {
+#nombre_petit {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -85,7 +85,24 @@
     border: black solid 5px;
 }
 
-#nombre_valider p {
+#nombre_petit p {
+    color: red;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#nombre_grand {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 40px;
+    margin-top: -8px;
+    width: 400px;
+    height: 150px;
+    border: black solid 5px;
+}
+
+#nombre_grand p {
     color: red;
     font-weight: bold;
     margin-right: 20px;
@@ -104,9 +121,49 @@ h2 {
     margin-top: 25px;
 }
 
-#ensemble_proposer {
+#petit {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     place-items: center;
+}
+
+#grand {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+#ensemble_mauvais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#gagner {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+
+}
+
+#gagner p {
+    font-size: 60px;
+    font-family: Stencil, cursive;
+    color: darkgreen;
+}
+
+#rejouer {
+    background: darkolivegreen;
+    font-size: 30px;
+    font-family: cursive;
+    color: gainsboro;
+    border-radius: 20px;
+    width: 200px;
 }

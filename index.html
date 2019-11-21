@@ -9,27 +9,40 @@
     <title>Deviner Un Nombre</title>
 </head>
 <body>
-<h1 id="titre">Deviner le nombre</h1>
 
-<div id="ensemble_affiche">
-    <div id="essaie_restant">Essaie Restant: <span id="essaie_nombre">10</span></div>
-    <div id="resultat">Resultat: <span id="resultat_nombre"></span></div>
+<div id="gagner">
+    <p id="felicitation"></p>
+    <input type="button" value="Rejouer" id="rejouer">
 </div>
 
-<div id="ensemble_proposer">
-    <h2>Nombre déjà proposé:</h2>
-    <div id="nombre_valider"></div>
-</div>
+<div id="jeux">
+    <h1 id="titre">Deviner le nombre</h1>
 
-<div id="nombre_proposer">
-    <label>
-        <p>Proposé un nombre entre 1 et 100:</p>
-        <input type="text" placeholder="Exemple: 86" id="champ_nombre" autofocus>
-        <br>
-        <input type="button" value="Valider" id="valider">
-    </label>
-</div>
+    <div id="ensemble_affiche">
+        <div id="essaie_restant">Essaie Restant: <span id="essaie_nombre">10</span></div>
+        <div id="resultat">Resultat: <span id="resultat_nombre"></span></div>
+    </div>
 
+    <div id="ensemble_mauvais">
+        <div id="petit">
+            <h2>Plus petit que:</h2>
+            <div id="nombre_petit"></div>
+        </div>
+        <div id="grand">
+            <h2>Plus grand que:</h2>
+            <div id="nombre_grand"></div>
+        </div>
+    </div>
+
+    <div id="nombre_proposer">
+        <label>
+            <p>Proposé un nombre entre 1 et 100:</p>
+            <input type="text" placeholder="Exemple: 86" id="champ_nombre" autofocus>
+            <br>
+            <input type="button" value="Valider" id="valider">
+        </label>
+    </div>
+</div>
 
 <!-- Optional -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
