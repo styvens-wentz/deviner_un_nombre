@@ -23,6 +23,7 @@ valider.addEventListener("click", function () {
         document.getElementById('essaie_nombre').innerHTML = essaie;
         createP();
         nombre_proposer.value = '';
+        nombre_proposer.focus()
     } else if (nombre_proposer.value > nombre_aleatoire) {
         resultat.innerHTML = 'PLUS PETIT';
         resultat.style.color = 'orange';
@@ -30,6 +31,7 @@ valider.addEventListener("click", function () {
         document.getElementById('essaie_nombre').innerHTML = essaie;
         createP();
         nombre_proposer.value = '';
+        nombre_proposer.focus()
     } else if (nombre_proposer.value !== nombre_aleatoire) {
         resultat.innerHTML = 'GAGNER';
         resultat.style.color = 'green';
