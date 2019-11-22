@@ -10,9 +10,18 @@ var gagner = document.getElementById('gagner');
 var felicitation = document.getElementById('felicitation');
 var jeux = document.getElementById('jeux');
 var niveau = document.getElementById('niveau');
+var tres_facile = document.getElementById('tres_facile');
 var facile = document.getElementById('facile');
 var normale = document.getElementById('normale');
 var difficile = document.getElementById('difficile');
+
+tres_facile.addEventListener("click", function () {
+    essaie = 10;
+    document.getElementById('essaie_nombre').innerHTML = essaie;
+    niveau.style.display = 'none';
+    jeux.style.filter = 'blur(0)';
+    nombre_proposer.placeholder = 'Exemple: '+nombre_aleatoire
+});
 
 facile.addEventListener("click", function () {
     essaie = 10;
