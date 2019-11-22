@@ -14,6 +14,8 @@ var tres_facile = document.getElementById('tres_facile');
 var facile = document.getElementById('facile');
 var normale = document.getElementById('normale');
 var difficile = document.getElementById('difficile');
+var quitter = document.getElementsByClassName('quitter');
+var count = quitter.length;
 
 tres_facile.addEventListener("click", function () {
     essaie = 10;
@@ -43,6 +45,12 @@ difficile.addEventListener("click", function () {
     niveau.style.display = 'none';
     jeux.style.filter = 'blur(0)'
 });
+
+for (j=0; j<count; j++) {
+    quitter[j].addEventListener("click", function () {
+        window.close();
+    })
+}
 
 function createG() {
     var p = document.createElement('p');
